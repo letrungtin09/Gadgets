@@ -1,0 +1,13 @@
+.btn--buy {
+  @include styleButton(
+    $pd-0,
+    $pd-3,
+    $color-white-1,
+    $color-black-0,
+    $fs-1,
+    $fw-3
+  );
+  &:hover {
+    @include hoverButton($color-white-0, $color-purple-1);
+  }
+}
