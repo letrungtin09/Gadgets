@@ -1,0 +1,16 @@
+.commercial {
+  background-color: $color-black-0;
+  padding: $pd-3 0 $pd-2;
+  .commercial__list {
+    display: flex;
+    .commercial__item {
+      width: 25%;
+      padding: 0 $pd-5;
+      .commercial__banner {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

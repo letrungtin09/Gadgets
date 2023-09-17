@@ -248,6 +248,21 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
   font-weight: 600;
 }
 
+.commercial {
+  background-color: #111518;
+  padding: 50px 0 25px;
+}
+.commercial .commercial__list {
+  display: flex;
+}
+.commercial .commercial__list .commercial__item {
+  width: 25%;
+  padding: 0 10px;
+}
+.commercial .commercial__list .commercial__item .commercial__banner img {
+  width: 100%;
+}
+
 .btn--buy {
   padding: 15px 50px;
   background-color: #f3f5f7;
