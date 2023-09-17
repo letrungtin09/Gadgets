@@ -94,7 +94,15 @@ header {
             margin-left: $mg-1;
           }
           .right-cart {
-            margin: 0 $mg-1;
+            margin-left: $mg-1;
+          }
+          .right-light {
+            margin-left: $mg-1;
+            .right-link {
+              &:hover {
+                color: $color-white-0;
+              }
+            }
           }
         }
       }

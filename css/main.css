@@ -109,7 +109,13 @@ header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-l
   margin-left: 30px;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-cart {
-  margin: 0 30px;
+  margin-left: 30px;
+}
+header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-light {
+  margin-left: 30px;
+}
+header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-light .right-link:hover {
+  color: #fff;
 }
 header .header__bottom .menu-list {
   list-style: none;
@@ -170,6 +176,7 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 .cover .cover__content {
   padding-top: 50px;
+  position: relative;
 }
 .cover .cover__content .cover__top {
   display: flex;
@@ -201,6 +208,44 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 .cover .cover__content .cover__top .cover__img img {
   width: 620px;
+}
+.cover .cover__content .cover__bottom {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(40px) brightness(200%);
+  position: absolute;
+  bottom: 30px;
+}
+.cover .cover__content .cover__bottom .cover__block {
+  display: flex;
+  justify-content: space-between;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item {
+  display: flex;
+  align-items: center;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item .cover__svg {
+  margin-right: 15px;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item .cover__svg svg {
+  fill: #fff;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item .cover__benefit {
+  font-family: "Poppins", sans-serif;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item .cover__benefit h6 {
+  color: #fff;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cover .cover__content .cover__bottom .cover__block .cover__item .cover__benefit p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .btn--buy {
