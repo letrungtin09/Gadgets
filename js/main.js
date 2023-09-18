@@ -1,8 +1,9 @@
 $(document).ready(function () {
-  $(".slider").slick({
+  $(".bestseller__slider").slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrow: true,
+    swipeToSlide: true,
   });
 });

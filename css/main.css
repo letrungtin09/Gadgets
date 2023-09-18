@@ -41,7 +41,7 @@ header .header__top .gadgetsNavbar #gadgetsNavbarContent .navbar-nav .nav-item .
   transition: 0.3s;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .navbar-nav .nav-item .nav-link:hover {
-  color: #7755ff;
+  color: #1aaed7;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__form {
   width: 50%;
@@ -71,7 +71,7 @@ header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__form .header__
   border-left: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #4923e6;
+  background-color: #18a0c6;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__form .header__btn i {
   color: #f3f5f7;
@@ -87,7 +87,7 @@ header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-l
   transition: 0.3s;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-link:hover {
-  color: #7755ff;
+  color: #1aaed7;
 }
 header .header__top .gadgetsNavbar #gadgetsNavbarContent .header__right .right-link i {
   font-size: 17px;
@@ -160,13 +160,13 @@ header .header__bottom .menu-list .menu-item .menu-link span {
   transition: 0.3s;
 }
 header .header__bottom .menu-list .menu-item .menu-link:hover span {
-  color: #7755ff;
+  color: #1aaed7;
 }
 header .header__bottom .menu-list .menu-item .menu-link:hover::before {
-  background-color: #7755ff;
+  background-color: #1aaed7;
 }
 header .header__bottom .menu-list .menu-item .menu-link:hover::after {
-  background-color: #7755ff;
+  background-color: #1aaed7;
 }
 
 .cover {
@@ -249,7 +249,7 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 
 .commercial {
-  background-color: #111518;
+  background-color: #f3f5f7;
   padding: 50px 0 25px;
 }
 .commercial .commercial__list {
@@ -261,6 +261,114 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 .commercial .commercial__list .commercial__item .commercial__banner img {
   width: 100%;
+}
+
+.bestseller {
+  background-color: #f3f5f7;
+}
+.bestseller .bestseller__content #gadgetsTab {
+  margin-bottom: 20px;
+  border: none;
+  padding-left: 10px;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link {
+  position: relative;
+  border: none;
+  background-color: #f3f5f7;
+  color: #111518;
+  padding: 10px 0;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link.active {
+  color: #18a0c6;
+  font-weight: 600;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link.active::after {
+  width: 100%;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #18a0c6;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link:hover {
+  color: #18a0c6;
+  font-weight: 600;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+.bestseller .bestseller__content #gadgetsTab .nav-item .selling,
+.bestseller .bestseller__content #gadgetsTab .nav-item .promotion {
+  margin-left: 30px;
+}
+.bestseller .bestseller__content #gadgetsTabContent {
+  padding: 15px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+}
+.bestseller .bestseller__content #gadgetsTabContent .bestseller__card {
+  text-decoration: none;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-prev {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  left: -15px;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-prev::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../../img/btn-prev.png);
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-prev:hover {
+  background-color: #18a0c6;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-prev:hover::before {
+  filter: brightness(0) invert(1);
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-next {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  right: -15px;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-next::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../../img/btn-next.png);
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-next:hover {
+  background-color: #18a0c6;
+}
+.bestseller .bestseller__content #gadgetsTabContent .slick-next:hover::before {
+  filter: brightness(0) invert(1);
 }
 
 .btn--buy {
@@ -275,5 +383,50 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 .btn--buy:hover {
   color: #fff;
-  background-color: #4923e6;
+  background-color: #18a0c6;
+}
+
+.card {
+  width: 240px;
+  height: 290px;
+  margin-left: 5px;
+  padding: 10px 15px;
+}
+.card img {
+  width: 100%;
+  height: 65%;
+  object-fit: contain;
+}
+.card .card-body {
+  padding: 0;
+  padding-top: 10px;
+}
+.card .card-body .card-title {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #18a0c6;
+}
+.card .card-body .card-discount {
+  justify-content: space-between;
+}
+.card .card-body .card-discount .card-sale {
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #f77066;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+}
+.card .card-body .card-new {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card .card-body .card-old {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */

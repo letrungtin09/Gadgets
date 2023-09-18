@@ -1,0 +1,44 @@
+.card {
+  width: 240px;
+  height: 290px;
+  margin-left: $mg-4;
+  padding: $pd-5 $pd-0;
+  img {
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+  }
+  .card-body {
+    padding: 0;
+    padding-top: $pd-5;
+    .card-title {
+      margin-bottom: 0;
+      font-size: $fs-0;
+      color: $color-blue-1;
+    }
+    .card-discount {
+      justify-content: space-between;
+      .card-sale {
+        padding: 2px 4px;
+        border-radius: $border-radius-1 - 2;
+        color: $color-white-0;
+        background-color: $color-red-0;
+        text-align: center;
+        font-size: $fs-4 - 1;
+        font-weight: $fw-2;
+      }
+    }
+    .card-new {
+      margin-bottom: 0;
+      font-size: $fs-0;
+      font-weight: $fw-4;
+    }
+    .card-old {
+      margin-bottom: 0;
+      font-size: $fs-0 - 1;
+      color: $color-gray-0;
+      font-weight: $fw-2;
+      text-decoration: line-through;
+    }
+  }
+}

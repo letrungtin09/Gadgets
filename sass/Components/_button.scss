@@ -8,6 +8,6 @@
     $fw-3
   );
   &:hover {
-    @include hoverButton($color-white-0, $color-purple-1);
+    @include hoverButton($color-white-0, $color-blue-1);
   }
 }
