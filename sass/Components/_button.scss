@@ -11,3 +11,32 @@
     @include hoverButton($color-white-0, $color-blue-1);
   }
 }
+
+.btn--show {
+  @include styleButton(
+    $pd-1,
+    $pd-2,
+    $color-black-1,
+    $color-white-0,
+    $fs-1,
+    $fw-1
+  );
+  border-radius: 50px;
+  &:hover {
+    @include hoverButton($color-white-0, $color-blue-1);
+  }
+}
+
+.btn--offer {
+  @include styleButton(
+    $pd-0,
+    $pd-7,
+    $color-white-1,
+    $color-black-0,
+    $fs-1,
+    $fw-3
+  );
+  &:hover {
+    @include hoverButton($color-white-0, $color-black-0);
+  }
+}

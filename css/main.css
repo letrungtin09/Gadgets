@@ -249,8 +249,8 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 }
 
 .commercial {
-  background-color: #f3f5f7;
-  padding: 50px 0 25px;
+  background-color: #f7f7f7;
+  padding: 30px 0;
 }
 .commercial .commercial__list {
   display: flex;
@@ -258,13 +258,18 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 .commercial .commercial__list .commercial__item {
   width: 25%;
   padding: 0 10px;
+  transition: 0.2s;
+}
+.commercial .commercial__list .commercial__item:hover {
+  filter: brightness(120%);
 }
 .commercial .commercial__list .commercial__item .commercial__banner img {
   width: 100%;
 }
 
 .bestseller {
-  background-color: #f3f5f7;
+  background-color: #f7f7f7;
+  padding-bottom: 30px;
 }
 .bestseller .bestseller__content #gadgetsTab {
   margin-bottom: 20px;
@@ -312,6 +317,7 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
   padding: 15px;
   background-color: #e6e6e6;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .bestseller .bestseller__content #gadgetsTabContent .bestseller__card {
   text-decoration: none;
@@ -370,6 +376,52 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
 .bestseller .bestseller__content #gadgetsTabContent .slick-next:hover::before {
   filter: brightness(0) invert(1);
 }
+.bestseller .bestseller__content .bestseller__showAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestseller .bestseller__content .bestseller__showAll a {
+  text-decoration: none;
+}
+.bestseller .bestseller__content .bestseller__showAll a i {
+  margin-right: 10px;
+}
+
+.offer {
+  background-color: #f7f7f7;
+  padding-bottom: 30px;
+}
+.offer .offer__content {
+  padding: 40px;
+  background-color: #111518;
+  background-image: linear-gradient(220deg, #111518 41%, #18a0c6 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.offer .offer__content .offer__info {
+  padding: 0 30px;
+  padding-right: 75px;
+}
+.offer .offer__content .offer__info .offer__text {
+  color: #fff;
+}
+.offer .offer__content .offer__info .offer__text h1 {
+  margin-bottom: 10px;
+}
+.offer .offer__content .offer__info .offer__text p {
+  margin-bottom: 10px;
+}
+.offer .offer__content .offer__info .offer__text a {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+.offer .offer__content .offer__img img {
+  width: 450px;
+}
 
 .btn--buy {
   padding: 15px 50px;
@@ -386,6 +438,37 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
   background-color: #18a0c6;
 }
 
+.btn--show {
+  padding: 8px 25px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+  transition: 0.2s;
+  border-radius: 50px;
+}
+.btn--show:hover {
+  color: #fff;
+  background-color: #18a0c6;
+}
+
+.btn--offer {
+  padding: 15px 35px;
+  background-color: #f3f5f7;
+  color: #111518;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  transition: 0.2s;
+}
+.btn--offer:hover {
+  color: #fff;
+  background-color: #111518;
+}
+
 .card {
   width: 240px;
   height: 290px;
@@ -396,6 +479,7 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
   width: 100%;
   height: 65%;
   object-fit: contain;
+  transition: 0.5s;
 }
 .card .card-body {
   padding: 0;
@@ -429,4 +513,7 @@ header .header__bottom .menu-list .menu-item .menu-link:hover::after {
   color: #999;
   font-weight: 500;
   text-decoration: line-through;
+}
+.card:hover img {
+  transform: scale3d(1.1, 1.1, 1);
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 .bestseller {
-  background-color: $color-white-1;
+  background-color: $color-white-4;
+  padding-bottom: $pd-9;
   .bestseller__content {
     #gadgetsTab {
       margin-bottom: $mg-3;
@@ -49,6 +50,7 @@
       padding: $pd-0;
       background-color: $color-white-2;
       border-radius: $border-radius-1;
+      margin-bottom: $mg-3;
       .bestseller__card {
         text-decoration: none;
       }
@@ -106,6 +108,17 @@
           &::before {
             filter: brightness(0) invert(1);
           }
+        }
+      }
+    }
+    .bestseller__showAll {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        i {
+          margin-right: $mg-2;
         }
       }
     }

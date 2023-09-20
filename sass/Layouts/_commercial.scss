@@ -1,11 +1,15 @@
 .commercial {
-  background-color: $color-white-1;
-  padding: $pd-3 0 $pd-2;
+  background-color: $color-white-4;
+  padding: $pd-9 0;
   .commercial__list {
     display: flex;
     .commercial__item {
       width: 25%;
       padding: 0 $pd-5;
+      transition: 0.2s;
+      &:hover {
+        filter: brightness(120%);
+      }
       .commercial__banner {
         img {
           width: 100%;
