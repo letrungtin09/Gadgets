@@ -1,0 +1,26 @@
+footer {
+  background-color: $color-black-0;
+  .footer__content {
+    padding: $pd-3 0 $pd-9;
+    .footer__row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .footer__copyright {
+    background-color: $color-black-0;
+    padding: $pd-4 0;
+    .footer__lttin {
+      margin-bottom: 0;
+      color: $color-white-0;
+      font-size: $fs-0;
+      text-align: center;
+      color: $color-gray-0;
+      a {
+        text-decoration: none;
+        color: $color-blue-0;
+      }
+    }
+  }
+}
