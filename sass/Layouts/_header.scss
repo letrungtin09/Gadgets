@@ -1,8 +1,11 @@
 header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
   background-color: $color-black-0;
   .header__top {
     .gadgetsNavbar {
-      padding: $pd-4 0;
+      padding: $pd-4 0 $pd-5;
       .navbar-brand {
         img {
           width: 150px;
@@ -113,7 +116,7 @@ header {
       list-style: none;
       margin: 0;
       justify-content: space-between;
-      padding: $pd-5 $pd-4 $pd-4;
+      padding: $pd-5 $pd-4 $pd-0;
       .menu-item {
         display: flex;
         align-items: center;
