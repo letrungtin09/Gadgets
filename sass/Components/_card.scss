@@ -2,7 +2,7 @@
   width: 240px;
   height: 290px;
   margin-left: $mg-4;
-  padding: $pd-5 $pd-0;
+  padding: $pd-0 $pd-4 $pd-5;
   img {
     width: 100%;
     height: 65%;
@@ -19,6 +19,7 @@
     }
     .card-discount {
       justify-content: space-between;
+      margin-top: $mg-4 - 2;
       .card-sale {
         padding: 2px 4px;
         border-radius: $border-radius-1 - 2;
@@ -44,7 +45,7 @@
   }
   &:hover {
     img {
-      transform: scale3d(1.1, 1.1, 1);
+      transform: scale(1.075);
     }
   }
 }
