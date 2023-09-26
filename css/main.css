@@ -272,7 +272,7 @@ footer .footer__copyright .footer__lttin a {
   width: 100%;
   height: 894px;
   background-color: #111518;
-  padding-top: 160px;
+  padding-top: 150px;
 }
 .cover .cover__content {
   padding-top: 50px;
@@ -647,6 +647,28 @@ footer .footer__copyright .footer__lttin a {
   background-color: #111518;
 }
 
+.btn--login,
+.btn--register,
+.btn--forgotPassword {
+  padding: 8px 25px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  transition: 0.2s;
+  border-radius: 50px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.btn--login:hover,
+.btn--register:hover,
+.btn--forgotPassword:hover {
+  color: #fff;
+  background-color: #18a0c6;
+}
+
 .card {
   width: 240px;
   height: 290px;
@@ -715,15 +737,149 @@ footer .footer__copyright .footer__lttin a {
   background-color: #18a0c6;
 }
 
-.login {
+.form-gadgets {
   background-color: #f7f7f7;
-  padding: 160px 0 30px;
+  padding: 150px 0 20px;
 }
-.login .login__form {
+.form-gadgets .form-container {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.login .login__form form {
+.form-gadgets .form-container .form-user {
+  width: 390px;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
   background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 #e3e3e3;
+}
+.form-gadgets .form-container .form-user label {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.form-gadgets .form-container .form-user input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.form-gadgets .form-container .form-user input:focus {
+  outline: none;
+  border: 1px solid #18a0c6;
+  box-shadow: 0 0 0 3px rgba(24, 160, 198, 0.3);
+}
+.form-gadgets .form-container .form-user input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.login .login__form form .login__content {
+  margin-bottom: 5px;
+}
+.login .login__form form .login__content input[type=email] {
+  margin-bottom: 15px;
+}
+.login .login__form form .login__save {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.login .login__form form .login__save label {
+  font-weight: 400;
+}
+.login .login__form form .login__save input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.login .login__form form .login__save input[type=checkbox]:focus {
+  box-shadow: none;
+}
+.login .login__form form .login__btn {
+  margin-bottom: 5px;
+}
+.login .login__form form .login__forget {
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+}
+.login .login__form form .login__forget a {
+  text-decoration: none;
+  color: #18a0c6;
+  font-weight: 500;
+}
+.login .login__form form .login__register {
+  padding: 10px 0;
+  text-align: center;
+}
+.login .login__form form .login__register a {
+  text-decoration: none;
+  color: #18a0c6;
+  font-weight: 500;
+}
+.login .login__form form .login__social a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.login .login__form form .login__social .login__facebook a {
+  border: 1px solid #3b5998;
+  border-radius: 50px;
+  margin: 5px 0 10px;
+  color: #3b5998;
+  transition: 0.3s;
+}
+.login .login__form form .login__social .login__facebook a:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+.login .login__form form .login__social .login__google a {
+  border: 1px solid #dd4c3b;
+  border-radius: 50px;
+  color: #dd4c3b;
+  transition: 0.3s;
+}
+.login .login__form form .login__social .login__google a:hover {
+  background-color: #dd4c3b;
+  color: #fff;
+}
+
+.register .register__form a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #18a0c6;
+}
+.register .register__form .register__btn {
+  margin-top: 10px;
+}
+.register .register__form .register__rule {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.register .register__form .register__login {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgotPassword .forgotPassword__form .forgotPassword__btn {
+  margin-top: 10px;
+}
+.forgotPassword .forgotPassword__form .forgotPassword__login {
+  margin-top: 10px;
+  text-align: center;
+}
+.forgotPassword .forgotPassword__form .forgotPassword__login a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #18a0c6;
 }/*# sourceMappingURL=main.css.map */

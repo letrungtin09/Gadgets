@@ -40,3 +40,22 @@
     @include hoverButton($color-white-0, $color-black-0);
   }
 }
+
+.btn--login,
+.btn--register,
+.btn--forgotPassword {
+  @include styleButton(
+    $pd-1,
+    $pd-2,
+    $color-black-1,
+    $color-white-0,
+    $fs-1,
+    $fw-2
+  );
+  border-radius: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  &:hover {
+    @include hoverButton($color-white-0, $color-blue-1);
+  }
+}
