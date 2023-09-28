@@ -1,0 +1,34 @@
+{
+  "categories": [
+    { "idCate": "1", "nameCate": "Màn hình PC" },
+    { "idCate": "2", "nameCate": "Máy tính xách tay" },
+    { "idCate": "3", "nameCate": "Điện thoại" },
+    { "idCate": "4", "nameCate": "Đồng hồ thông minh" },
+    { "idCate": "5", "nameCate": "Tai nghe" },
+    { "idCate": "6", "nameCate": "Máy nghe nhạc" },
+    { "idCate": "7", "nameCate": "Camera" },
+    { "idCate": "8", "nameCate": "Máy đọc sách" },
+    { "idCate": "9", "nameCate": "Phụ kiện" }
+  ],
+  "products": [
+    {
+      "idProduct": "1",
+      "nameProduct": "Laptop Dell",
+      "image": "./img/products/pc-1.jpg",
+      "price": "1900000",
+      "sale": "10%"
+    }
+  ],
+  "users": [
+    {
+      "idUser": "1",
+      "email": "tin@gmail.com",
+      "fullName": "Lê Trung Tín",
+      "avatar": "img",
+      "sex": "Nam",
+      "phoneNumber": "0123456789",
+      "address": "TP Hồ Chí Minh"
+    }
+  ],
+  "posts": []
+}
