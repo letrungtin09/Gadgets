@@ -13,9 +13,9 @@
   "products": [
     {
       "idProduct": "1",
-      "nameProduct": "Laptop Dell",
+      "nameProduct": "Dahua DHI-LM24-E231 - 23.8in FHD IPS",
       "image": "./img/products/pc-1.jpg",
-      "price": "1900000",
+      "price": "9900000",
       "sale": "10%"
     }
   ],
@@ -23,11 +23,22 @@
     {
       "idUser": "1",
       "email": "tin@gmail.com",
+      "password": "tin123",
       "fullName": "Lê Trung Tín",
-      "avatar": "img",
+      "avatar": "./img/users/user.jpg",
       "sex": "Nam",
       "phoneNumber": "0123456789",
       "address": "TP Hồ Chí Minh"
+    },
+    {
+      "idUser": "2",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "fullName": "Admin",
+      "avatar": "./img/users/admin.jpg",
+      "sex": "",
+      "phoneNumber": "",
+      "address": ""
     }
   ],
   "posts": []
