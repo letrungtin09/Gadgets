@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".bestseller__slider").slick({
+  $(".bestseller__new").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -9,7 +9,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".bestseller__slider2").slick({
+  $(".bestseller__selling").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -19,7 +19,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".bestseller__slider3").slick({
+  $(".bestseller__promotion").slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrow: true,
+    swipeToSlide: true,
+  });
+});
+
+$(document).ready(function () {
+  $(".other-slider").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
