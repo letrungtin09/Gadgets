@@ -1,0 +1,96 @@
+{
+  "categories": [
+    { "idCate": 1, "nameCate": "Màn hình PC" },
+    { "idCate": 2, "nameCate": "Máy tính xách tay" },
+    { "idCate": 3, "nameCate": "Điện thoại" },
+    { "idCate": 4, "nameCate": "Đồng hồ thông minh" },
+    { "idCate": 5, "nameCate": "Tai nghe" },
+    { "idCate": 6, "nameCate": "Máy nghe nhạc" },
+    { "idCate": 7, "nameCate": "Camera" },
+    { "idCate": 8, "nameCate": "Máy đọc sách" },
+    { "idCate": 9, "nameCate": "Phụ kiện" }
+  ],
+  "products": [
+    {
+      "idProduct": 1,
+      "nameProduct": "LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz",
+      "image": "pc-1/pd-1.jpg",
+      "price": 24490000,
+      "sale": 0.1,
+      "imagesNav": [
+        "pc-1/de-1.jpg",
+        "pc-1/de-2.jpg",
+        "pc-1/de-3.jpg",
+        "pc-1/de-4.jpg",
+        "pc-1/de-5.jpg",
+        "pc-1/de-6.jpg",
+        "pc-1/de-7.jpg"
+      ],
+      "imagesZoom": [
+        "pc-1/pc-1.jpg",
+        "pc-1/pc-2.jpg",
+        "pc-1/pc-3.jpg",
+        "pc-1/pc-4.jpg",
+        "pc-1/pc-5.jpg",
+        "pc-1/pc-6.jpg",
+        "pc-1/pc-7.jpg"
+      ],
+      "featured": 1,
+      "purchase": 10,
+      "idCate": 1,
+      "brand": "LG"
+    },
+    {
+      "idProduct": 2,
+      "nameProduct": "Dahua DHI-LM27-C201 - 27in FHD IPS",
+      "image": "pc-2/pd-2.jpg",
+      "price": 2700000,
+      "sale": 0,
+      "imagesNav": [
+        "pc-2/de-1.jpg",
+        "pc-2/de-2.jpg",
+        "pc-2/de-3.jpg",
+        "pc-2/de-4.jpg",
+        "pc-2/de-5.jpg",
+        "pc-2/de-6.jpg",
+        "pc-2/de-7.jpg"
+      ],
+      "imagesZoom": [
+        "pc-2/pc-1.jpg",
+        "pc-2/pc-2.jpg",
+        "pc-2/pc-3.jpg",
+        "pc-2/pc-4.jpg",
+        "pc-2/pc-5.jpg",
+        "pc-2/pc-6.jpg",
+        "pc-2/pc-7.jpg"
+      ],
+      "featured": 1,
+      "purchase": 5,
+      "idCate": 1,
+      "brand": "LG"
+    }
+  ],
+  "users": [
+    {
+      "idUser": 1,
+      "email": "tin@gmail.com",
+      "password": "tin123",
+      "fullName": "Lê Trung Tín",
+      "avatar": "./img/users/user.jpg",
+      "sex": "Nam",
+      "phoneNumber": "0123456789",
+      "address": "TP Hồ Chí Minh"
+    },
+    {
+      "idUser": 2,
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "fullName": "Admin",
+      "avatar": "./img/users/admin.jpg",
+      "sex": "",
+      "phoneNumber": "",
+      "address": ""
+    }
+  ],
+  "posts": []
+}

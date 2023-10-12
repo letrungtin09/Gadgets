@@ -720,6 +720,23 @@ footer .footer__copyright .footer__lttin a {
   opacity: 0.7;
 }
 
+.btn--home {
+  padding: 10px 30px;
+  background-color: #18a0c6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.btn--home:hover {
+  color: #18a0c6;
+  background-color: #fff;
+}
+
 .card {
   width: 240px;
   height: 290px;
@@ -1271,4 +1288,155 @@ footer .footer__copyright .footer__lttin a {
   width: 50px;
   height: 2px;
   background-color: #18a0c6;
+}
+
+.main-admin .left-admin {
+  background-color: #111518;
+  padding: 0;
+}
+.main-admin .left-admin .logo-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.main-admin .left-admin .logo-admin img {
+  width: 70%;
+}
+.main-admin .left-admin .title-admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-top: 1px solid #1aaed7;
+  border-bottom: 1px solid #1aaed7;
+  padding: 8px 0;
+}
+.main-admin .left-admin .title-admin span {
+  margin-left: 10px;
+}
+.main-admin .left-admin .title-admin i {
+  color: #1aaed7;
+}
+.main-admin .left-admin .navbar-admin {
+  display: flex;
+  justify-content: center;
+}
+.main-admin .left-admin .navbar-admin ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+}
+.main-admin .left-admin .navbar-admin ul li {
+  padding: 8px 0;
+  margin: 5px 0;
+}
+.main-admin .left-admin .navbar-admin ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.main-admin .left-admin .navbar-admin ul li a:hover {
+  color: #1aaed7;
+}
+.main-admin .left-admin .navbar-admin ul li a.active {
+  color: #1aaed7;
+}
+.main-admin .left-admin .navbar-admin ul li a span {
+  margin-left: 5px;
+  font-weight: 500;
+}
+.main-admin .left-admin .navbar-admin ul li a i {
+  width: 24px;
+}
+.main-admin .left-admin .btn-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.main-admin .right-admin {
+  padding: 0;
+}
+.main-admin .right-admin .header-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0px 1px 5px #999;
+}
+.main-admin .right-admin .header-admin .header-form {
+  position: relative;
+}
+.main-admin .right-admin .header-admin .header-form input {
+  width: 390px;
+  padding: 8px 15px;
+  padding-right: 39px;
+  border: 2px solid #999;
+  border-radius: 20px;
+  font-size: 15px;
+}
+.main-admin .right-admin .header-admin .header-form input:focus {
+  outline: none;
+}
+.main-admin .right-admin .header-admin .header-form .header-search {
+  position: absolute;
+  right: 17px;
+  top: 9px;
+  border: none;
+  background-color: transparent;
+}
+.main-admin .right-admin .header-admin .header-form .header-search i {
+  font-size: 18px;
+}
+.main-admin .right-admin .header-admin .header-account .user-admin {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+.main-admin .right-admin .header-admin .header-account .user-admin::after {
+  content: unset;
+}
+.main-admin .right-admin .header-admin .header-account .user-admin img {
+  width: 100%;
+}
+.main-admin .right-admin .header-admin .header-account .dropdown-item {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+.main-admin .right-admin .header-admin .header-account .dropdown-item i {
+  margin-right: 7px;
+}
+.main-admin .right-admin .content-admin {
+  height: 1000px;
+}
+.main-admin .right-admin .footer-admin {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 0px 5px #999;
+}
+.main-admin .right-admin .footer-admin .footer-logo img {
+  width: 130px;
+}
+.main-admin .right-admin .footer-admin .footer-copyright {
+  width: 75%;
+  text-align: center;
+}
+.main-admin .right-admin .footer-admin .footer-copyright .footer-lttin {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.main-admin .right-admin .footer-admin .footer-copyright .footer-lttin a {
+  text-decoration: none;
+  color: #18a0c6;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

@@ -89,3 +89,19 @@
     }
   }
 }
+
+.btn--home {
+  @include styleButton(
+    $pd-5,
+    $pd-9,
+    $color-blue-1,
+    $color-white-0,
+    $fs-1,
+    $fw-2
+  );
+  text-decoration: none;
+  border-radius: 20px;
+  &:hover {
+    @include hoverButton($color-blue-1, $color-white-0);
+  }
+}

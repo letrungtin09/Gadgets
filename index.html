@@ -80,33 +80,7 @@
             <nav class="header__menu">
                 <div class="container">
                     <ul class="menu-list d-flex">
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Màn hình PC</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy tính xách tay</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Điện thoại</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Đồng hồ thông minh</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Tai nghe</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy nghe nhạc</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Camera</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy đọc sách</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Phụ kiện</span></a>
-                        </li>
+                        <script src="js/categories.js"></script>
                     </ul>
                 </div>
             </nav>
@@ -230,14 +204,14 @@
             <div class="bestseller__content">
                 <ul class="nav nav-tabs" id="gadgetsTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane"
-                            type="button" role="tab" aria-controls="new-tab-pane" aria-selected="true">Sản phẩm
-                            mới</button>
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                            type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">Tất cả sản
+                            phẩm</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link selling" id="selling-tab" data-bs-toggle="tab"
                             data-bs-target="#selling-tab-pane" type="button" role="tab" aria-controls="selling-tab-pane"
-                            aria-selected="false">Bán
+                            aria-selected="false">Top 10 bán
                             chạy</button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -247,337 +221,22 @@
                     </li>
                 </ul>
                 <div class="tab-content" id="gadgetsTabContent">
-                    <div class="tab-pane fade show active" id="new-tab-pane" role="tabpanel" aria-labelledby="new-tab"
+                    <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab"
                         tabindex="0">
-                        <div class="bestseller__new">
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM24-E231 - 23.8in FHD IPS</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">7.900.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 10%</span>
-                                            </div>
-                                            <p class="card-old">9.900.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="./detailProduct.html">
-                                    <div class="card">
-                                        <img src="./img/products/pc-4/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz
-                                            </h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">22.041.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 10%</span>
-                                            </div>
-                                            <p class="card-old">24.490.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-6.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM27-E230C - 27in FHD VA Cong</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.650.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">ASUS Vivobook 14 X1404</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">16.990.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/watch-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Garmin Venu 3S</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.675.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 5%</span>
-                                            </div>
-                                            <p class="card-old">12.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">HP Pavilion 15</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.290.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/read-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Máy đọc sách Kindle Paperwhite 4 chống nước</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.090.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 6%</span>
-                                            </div>
-                                            <p class="card-old">3.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="bestseller__all">
+                            <script src="js/product/all.js"></script>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="selling-tab-pane" role="tabpanel" aria-labelledby="selling-tab"
                         tabindex="0">
                         <div class="bestseller__selling">
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM24-E231 - 23.8in FHD IPS</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">7.900.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 10%</span>
-                                            </div>
-                                            <p class="card-old">9.900.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-4/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz
-                                            </h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">24.790.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-6.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM27-E230C - 27in FHD VA Cong</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.650.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">ASUS Vivobook 14 X1404</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">16.990.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/watch-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Garmin Venu 3S</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.675.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 5%</span>
-                                            </div>
-                                            <p class="card-old">12.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">HP Pavilion 15</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.290.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="selling-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/read-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Máy đọc sách Kindle Paperwhite 4 chống nước</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.090.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 6%</span>
-                                            </div>
-                                            <p class="card-old">3.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <script src="js/product/bestseller.js"></script>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="promotion-tab-pane" role="tabpanel" aria-labelledby="promotion-tab"
                         tabindex="0">
                         <div class="bestseller__promotion">
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM24-E231 - 23.8in FHD IPS</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">7.900.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 10%</span>
-                                            </div>
-                                            <p class="card-old">9.900.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-4/pc-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz
-                                            </h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">24.790.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/pc-6.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Dahua DHI-LM27-E230C - 27in FHD VA Cong</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.650.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">ASUS Vivobook 14 X1404</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">16.990.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/watch-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Garmin Venu 3S</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.675.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 5%</span>
-                                            </div>
-                                            <p class="card-old">12.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/laptop-3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">HP Pavilion 15</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">11.290.000 <span class="vnd">đ</span></p>
-                                                <!-- <span class="card-sale">Sale 10%</span> -->
-                                            </div>
-                                            <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="promotion-item">
-                                <a class="bestseller__card" href="">
-                                    <div class="card">
-                                        <img src="./img/products/read-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Máy đọc sách Kindle Paperwhite 4 chống nước</h5>
-                                            <div class="card-discount d-flex align-items-end">
-                                                <p class="card-new">3.090.000 <span class="vnd">đ</span></p>
-                                                <span class="card-sale">Sale 6%</span>
-                                            </div>
-                                            <p class="card-old">3.290.000 <span class="vnd">đ</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <script src="js/product/promotion.js"></script>
                         </div>
                     </div>
                 </div>
