@@ -22,13 +22,18 @@
 @import "./Components/button";
 @import "./Components/card";
 @import "./Components/sectionText";
+@import "./Components/detailNavBar";
 @import "./Components/formUser";
+@import "./Components/formAdmin";
 
 // Pages
 @import "./Pages/login";
 @import "./Pages/register";
 @import "./Pages/forgotPassword";
 @import "./Pages/detailProduct";
+@import "./Pages/detailCategory";
+@import "./Pages/showAll";
+@import "./Pages/searchProduct";
 @import "./Pages/admin";
 
 //Theme

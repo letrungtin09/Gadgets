@@ -41,13 +41,14 @@
                                 <a class="nav-link" href="#">TIN TỨC</a>
                             </li>
                             <li class="nav-item ms-2">
-                                <a class="nav-link" href="#">SẢN PHẨM</a>
+                                <a class="nav-link" href="allProduct.html">SẢN PHẨM</a>
                             </li>
                         </ul>
-                        <form class="header__form d-flex" role="search">
-                            <input class="header__input" type="search" placeholder="Nhập sản phẩm tìm kiếm..."
-                                aria-label="Search">
-                            <button class="header__btn" type="submit"><i class="fa fa-search"></i></button>
+                        <form class="header__form d-flex" id="form-searchPd" role="search">
+                            <input id="header__inputSearch" class="header__input" type="search"
+                                placeholder="Nhập sản phẩm tìm kiếm..." aria-label="Search">
+                            <button id="header__btnSearch" class="header__btn" type="button"><i
+                                    class="fa fa-search"></i></button>
                         </form>
                         <div class="header__right d-flex">
                             <div class="right-check">
@@ -62,14 +63,88 @@
                                 </a>
                             </div>
                             <div class="right-cart">
-                                <a class="right-link" href="">
-                                    <i class="fa fa-shopping-cart"></i>
-                                </a>
-                            </div>
-                            <div class="right-light">
-                                <a class="right-link" href="">
-                                    <i class="fa fa-moon"></i>
-                                </a>
+                                <div class="dropdown">
+                                    <button class="right-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span class="number">0</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <div class="dropdown-title">
+                                            <p> Giỏ hàng</p>
+                                        </div>
+                                        <div class="cart-list">
+                                            <!-- <div class="item">
+                                                <div class="cart-item">
+                                                    <a class="imgPd" id="imgPd" href="#"><img
+                                                            src="./img/products/lap-2/de-1.jpg" alt=""></a>
+                                                    <div class="info-item">
+                                                        <a class="namePd" id="namePd" href="#">Dell Vostro 3430 -
+                                                            i7-1355U - 16GB -
+                                                            512GB SSD</a>
+                                                        <div class="amount">
+                                                            <span>Số lượng: </span>
+                                                            <input type="number" name="quantity" id="quantity" min="1"
+                                                                max="10" value="">
+                                                        </div>
+                                                        <div class="price">
+                                                            <div class="price-new"><span id="cartPrice">16.990.00</span>
+                                                                <span class="vnd">đ</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="cart-item">
+                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
+                                                            alt=""></a>
+                                                    <div class="info-item">
+                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
+                                                            512GB SSD</a>
+                                                        <div class="amount">
+                                                            <span>Số lượng: </span>
+                                                            <input type="number" name="quantity" id="quantity" min="1"
+                                                                max="10">
+                                                        </div>
+                                                        <div class="price">
+                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="cart-item">
+                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
+                                                            alt=""></a>
+                                                    <div class="info-item">
+                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
+                                                            512GB SSD</a>
+                                                        <div class="amount">
+                                                            <span>Số lượng: </span>
+                                                            <input type="number" name="quantity" id="quantity" min="1"
+                                                                max="10">
+                                                        </div>
+                                                        <div class="price">
+                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="cart-checkout">
+                                            <div class="cart-total">
+                                                <span>Tổng tiền: </span><span class="total-money">16.990.00 <span
+                                                        class="vnd">đ</span></span>
+                                            </div>
+                                            <div class="btn-pay">
+                                                <a class="btn--checkout" href="#">Thanh toán</a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -80,7 +155,7 @@
             <nav class="header__menu">
                 <div class="container">
                     <ul class="menu-list d-flex">
-                        <script src="js/categories.js"></script>
+                        <script src="js/category/categories.js"></script>
                     </ul>
                 </div>
             </nav>
@@ -224,24 +299,22 @@
                     <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab"
                         tabindex="0">
                         <div class="bestseller__all">
-                            <script src="js/product/all.js"></script>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="selling-tab-pane" role="tabpanel" aria-labelledby="selling-tab"
                         tabindex="0">
                         <div class="bestseller__selling">
-                            <script src="js/product/bestseller.js"></script>
                         </div>
+                        <script src="js/product/bestseller.js"></script>
                     </div>
                     <div class="tab-pane fade" id="promotion-tab-pane" role="tabpanel" aria-labelledby="promotion-tab"
                         tabindex="0">
                         <div class="bestseller__promotion">
-                            <script src="js/product/promotion.js"></script>
                         </div>
                     </div>
                 </div>
                 <div class="bestseller__showAll">
-                    <a href="" class="btn--show">
+                    <a href="allProduct.html" class="btn--show">
                         <i class="fa fa-plus-circle"></i><span>Xem thêm</span>
                     </a>
                 </div>
@@ -273,166 +346,8 @@
             <div class="featured__content">
                 <h2 class="section-text">Sản phẩm đặc biệt</h2>
                 <div class="featured__list">
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/pc-7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Màn hình di động Viewsonic VP16 - 15.6in FHD OLED USB-C</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">13.990.000 <span class="vnd">đ</span></p>
-                                    <!-- <span class="card-sale">Sale 10%</span> -->
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/pc-8.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">LG GRAM+VIEW 16MR70 - 16in IPS WQXGA 60Hz Type-C</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">9.890.000 <span class="vnd">đ</span></p>
-                                    <!-- <span class="card-sale">Sale 10%</span> -->
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/keyb-1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Razer Ornata V3 X</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">990.000 <span class="vnd">đ</span></p>
-                                    <!-- <span class="card-sale">Sale 10%</span> -->
-                                </div>
-                                <p class="card-old">1.099.000 <span class="vnd">đ</span></p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/key-2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Razer DeathStalker V2 Pro TKL</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">4.699.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/key-3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Razer BlackWidow V4 Pro</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">6.199.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/laptop-4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Dell Gaming G15 5525 - Ryzen 7 6800H - 16GB - 512GB SSD</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">25.990.000 <span class="vnd">đ</span>
-                                </div>
-                                <p class="card-old">27.490.000 <span class="vnd">đ</span></p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/pc-9.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Philips E Line 245E1S - 24in IPS QHD</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">4.550.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/pc-10.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Philips 24M1N3200ZA - 24in IPS 165Hz</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">3.990.000 <span class="vnd">đ</span>
-                                </div>
-                                <p class="card-old">4.300.000 <span class="vnd">đ</span></p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/pc-11.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">ASUS ProArt PA278QV-P - 27in 16:9 IPS</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">9.590.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/read-2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Máy đọc sách Onyx Boox Tab Ultra</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">15.990.000 <span class="vnd">đ</span>
-                                </div>
-                                <p class="card-old">16.990.000 <span class="vnd">đ</span></p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/watch-7.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Garmin Approach R10</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">16.290.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/watch-5.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Garmin Forerunner 255S</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">8.990.000 <span class="vnd">đ</span>
-                                </div>
-                                <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                            </div>
-                        </div>
-                    </a>
-                    <a class="featured__item text-decoration-none" href="">
-                        <div class="card">
-                            <img src="./img/products/watch-6.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Garmin Forerunner 955 Solar</h5>
-                                <div class="card-discount d-flex align-items-end">
-                                    <p class="card-new">14.525.000 <span class="vnd">đ</span></p>
-                                </div>
-                                <p class="card-old">15.290.000 <span class="vnd">đ</span></p>
-                            </div>
-                        </div>
-                    </a>
                 </div>
+                <script src="js/product/renderProduct.js"></script>
             </div>
         </div>
     </section>

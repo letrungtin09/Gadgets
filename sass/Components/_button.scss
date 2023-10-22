@@ -105,3 +105,42 @@
     @include hoverButton($color-blue-1, $color-white-0);
   }
 }
+
+.btn--checkout {
+  @include styleButton($pd-5, 0, $color-black-2, $color-white-0, $fs-1, $fw-2);
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  &:hover {
+    @include hoverButton($color-white-0, $color-blue-1);
+  }
+}
+
+.btn--add {
+  @include styleButton(
+    $pd-5,
+    $pd-1,
+    $color-black-2,
+    $color-white-0,
+    $fs-1,
+    $fw-2
+  );
+  text-decoration: none;
+}
+.btn--edit,
+.btn--delete {
+  @include styleButton(
+    $pd-1,
+    $pd-1,
+    $color-black-2,
+    $color-white-0,
+    $fs-1,
+    $fw-2
+  );
+  width: 50%;
+  text-decoration: none;
+  margin-bottom: 10px;
+}

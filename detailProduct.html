@@ -43,13 +43,14 @@
                                 <a class="nav-link" href="#">TIN TỨC</a>
                             </li>
                             <li class="nav-item ms-2">
-                                <a class="nav-link" href="#">SẢN PHẨM</a>
+                                <a class="nav-link" href="allProduct.html">SẢN PHẨM</a>
                             </li>
                         </ul>
-                        <form class="header__form d-flex" role="search">
-                            <input class="header__input" type="search" placeholder="Nhập sản phẩm tìm kiếm..."
-                                aria-label="Search">
-                            <button class="header__btn" type="submit"><i class="fa fa-search"></i></button>
+                        <form class="header__form d-flex" id="form-searchPd" role="search">
+                            <input id="header__inputSearch" class="header__input" type="search"
+                                placeholder="Nhập sản phẩm tìm kiếm..." aria-label="Search">
+                            <button id="header__btnSearch" class="header__btn" type="button"><i
+                                    class="fa fa-search"></i></button>
                         </form>
                         <div class="header__right d-flex">
                             <div class="right-check">
@@ -64,14 +65,31 @@
                                 </a>
                             </div>
                             <div class="right-cart">
-                                <a class="right-link" href="">
-                                    <i class="fa fa-shopping-cart"></i>
-                                </a>
-                            </div>
-                            <div class="right-light">
-                                <a class="right-link" href="">
-                                    <i class="fa fa-moon"></i>
-                                </a>
+                                <div class="dropdown">
+                                    <button class="right-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span class="number"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <div class="dropdown-title">
+                                            <p> Giỏ hàng</p>
+                                        </div>
+                                        <div class="cart-list">
+
+                                        </div>
+                                        <script src="./js/cart/showCart.js"></script>
+                                        <div class="cart-checkout">
+                                            <div class="cart-total">
+                                                <span class="sumCart">Tổng tiền: </span><span class="totalMoney"></span>
+                                                <span class="vnd">đ</span>
+                                            </div>
+                                            <div class="btn-pay">
+                                                <a class="btn--checkout" href="#">Thanh toán</a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -82,33 +100,7 @@
             <nav class="header__menu">
                 <div class="container">
                     <ul class="menu-list d-flex">
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Màn hình PC</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy tính xách tay</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Điện thoại</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Đồng hồ thông minh</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Tai nghe</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy nghe nhạc</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Camera</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Máy đọc sách</span></a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="menu-link" href=""><span>Phụ kiện</span></a>
-                        </li>
+                        <script src="js/category/categories.js"></script>
                     </ul>
                 </div>
             </nav>
@@ -117,23 +109,20 @@
     <!-- PRODUCT INTRO -->
     <section class="productIntro">
         <div class="container">
-            <div class="productIntro__navBar">
+            <div class="detail-navBar">
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="#">Màn hình PC</a></li>
-                    <li><a href="#">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz</a></li>
+                    <li id="cate-product"></li>
+                    <li id="name-product"></li>
                 </ul>
             </div>
             <div class="productIntro__info">
                 <div class="row">
                     <div class="col-5">
                         <div class="productIntro__slick">
-                            <div class="productIntro__promotion">Sale 10%</div>
                             <div class="productIntro__nav">
-                               <script src="js/detailProduct/detailNav.js"></script>
                             </div>
                             <div class="productIntro__slide">
-                                <script src="js/detailProduct/detailZoom.js"></script>
                             </div>
                             <div class="productIntro__des">
                                 <img src="./img/zoom-in.png" alt="">
@@ -143,40 +132,10 @@
                     </div>
                     <div class="col-7">
                         <div class="productIntro__detail">
-                            <div class="productIntro__top">
-                                <h1>LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz 0.03ms</h1>
-                                <div class="productIntro__below">
-                                    <div class="productIntro__brand">
-                                        <span>Thương hiệu: </span>
-                                        <a href="#">LG</a>
-                                    </div>
-                                    <div class="productIntro__id">
-                                        <span>Mã Sản phẩm: </span>
-                                        <span class="productIntro__code">27GR95QE-B.ATV</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="productIntro__price">
-                                        <div class="price-new">22.041.000 <span class="vnd">đ</span></div>
-                                        <div class="price-old">24.490.000 <span class="vnd">đ</span></div>
-                                        <div class="price-des">(Đã bao gồm VAT)</div>
-                                    </div>
-                                    <div class="productIntro__guarantee">
-                                        <span>Bảo hành: 12 tháng. </span><a href="#">(Quy định bảo hành)</a>
-                                    </div>
-                                    <div class="productIntro__option"></div>
-                                    <div class="productIntro__btn">
-                                        <a class="btn--addCart" href="#">Thêm vào giỏ hàng</a>
-                                        <a class="btn--installment1" href="#">Trả góp tiền mặt <div class="btn-des">Chỉ
-                                                từ
-                                                3.441.000 ₫/tháng</div></a>
-                                        <a class="btn--installment2" href="#">Trả góp 0% qua thẻ <div class="btn-des">
-                                                Visa,
-                                                Master, JCB</div></a>
-                                    </div>
-                                </div>
+
+                            <div class="row productIntro__detailPrice">
+                                <script src="./js/cart/addProduct.js"></script>
+                                <script src="js/detailProduct/renderDetail.js"></script>
                                 <div class="col-5">
                                     <div class="productIntro__support">
                                         <h6 class="support-title">Tư vấn & Mua hàng - Gọi <a href="tel:19007777">1900
@@ -203,113 +162,8 @@
                 <div class="productIntro__other">
                     <h5 class="other-title">Sản phẩm tương tự</h5>
                     <div class="other-slider">
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/pc-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Dahua DHI-LM24-E231 - 23.8in FHD IPS</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">7.900.000 <span class="vnd">đ</span></p>
-                                            <span class="card-sale">Sale 10%</span>
-                                        </div>
-                                        <p class="card-old">9.900.000 <span class="vnd">đ</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="./detailProduct.html">
-                                <div class="card">
-                                    <img src="./img/products/pc-4/pc-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz
-                                        </h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">22.041.000 <span class="vnd">đ</span></p>
-                                            <span class="card-sale">Sale 10%</span>
-                                        </div>
-                                        <p class="card-old">24.490.000 <span class="vnd">đ</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/pc-6.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Dahua DHI-LM27-E230C - 27in FHD VA Cong</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">3.650.000 <span class="vnd">đ</span></p>
-                                            <!-- <span class="card-sale">Sale 10%</span> -->
-                                        </div>
-                                        <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/laptop-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ASUS Vivobook 14 X1404</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">16.990.000 <span class="vnd">đ</span></p>
-                                            <!-- <span class="card-sale">Sale 10%</span> -->
-                                        </div>
-                                        <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/watch-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Garmin Venu 3S</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">11.675.000 <span class="vnd">đ</span></p>
-                                            <span class="card-sale">Sale 5%</span>
-                                        </div>
-                                        <p class="card-old">12.290.000 <span class="vnd">đ</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/laptop-3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">HP Pavilion 15</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">11.290.000 <span class="vnd">đ</span></p>
-                                            <!-- <span class="card-sale">Sale 10%</span> -->
-                                        </div>
-                                        <!-- <p class="card-old">9.900.000 <span class="vnd">đ</span></p> -->
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slider-item">
-                            <a class="other-card text-decoration-none" href="">
-                                <div class="card">
-                                    <img src="./img/products/read-1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Máy đọc sách Kindle Paperwhite 4 chống nước</h5>
-                                        <div class="card-discount d-flex align-items-end">
-                                            <p class="card-new">3.090.000 <span class="vnd">đ</span></p>
-                                            <span class="card-sale">Sale 6%</span>
-                                        </div>
-                                        <p class="card-old">3.290.000 <span class="vnd">đ</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
+                    <script src="js/detailProduct/productsOrther.js"></script>
                 </div>
             </div>
         </div>
