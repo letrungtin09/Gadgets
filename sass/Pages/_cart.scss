@@ -1,0 +1,171 @@
+.cart {
+  background-color: #f7f7f7;
+  padding-top: 115px;
+  padding-bottom: 30px;
+  .cart__content {
+    background-color: white;
+    .col-8,
+    .col-4 {
+      background-color: #f7f7f7;
+    }
+    .cart__title {
+      padding: 0 15px 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e6e6e6;
+      span {
+        font-weight: 500;
+      }
+      i {
+        margin-right: 5px;
+        font-size: 13px;
+      }
+      #totalQuantity {
+        color: red;
+        font-weight: 700;
+      }
+    }
+    .cart__list,
+    .cart__total {
+      padding: 15px;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #f2f2f2;
+      border-top: 2px solid #18a0c6;
+      margin-bottom: 20px;
+    }
+    .cart__products {
+      .cart__item {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px dashed #f2f2f2;
+        .cart__detail {
+          padding: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          .cart__img {
+            width: 100px;
+            height: 100px;
+          }
+          .cart__caption {
+            padding-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 100px);
+            .cart__info {
+              .cart__name {
+                text-decoration: none;
+                color: #333333;
+                font-size: 14px;
+                font-weight: 500;
+              }
+              .cart__amount {
+                font-size: 13px;
+                margin-top: 5px;
+                span {
+                  color: #999;
+                }
+                input {
+                  border: 1px solid #f2f2f2;
+                  width: 35px;
+                  margin-left: 3px;
+                  font-weight: 500;
+                }
+              }
+            }
+            .cart__price {
+              .price-new {
+                font-size: 15px;
+                font-weight: 700;
+                color: #607d8b;
+                text-align: right;
+              }
+              .price-des {
+                font-size: 12px;
+                margin-top: 5px;
+                color: #999;
+                font-style: italic;
+              }
+            }
+          }
+          .btn-remove {
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            color: #fff;
+            padding-bottom: 3px;
+            padding-right: 3px;
+            &::before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 0;
+              border-top: 20px solid transparent;
+              border-left: 20px solid transparent;
+              border-right: 20px solid #18a0c6;
+              border-bottom: 20px solid #18a0c6;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transition: all 0.2s;
+            }
+            &:hover {
+              &::before {
+                border-right-color: #333;
+                border-bottom-color: #333;
+              }
+            }
+            i {
+              color: white;
+              position: relative;
+              z-index: 1;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .cart__money {
+      padding: 15px;
+      .cart__group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        .cart__label {
+          font-weight: 500;
+        }
+        .cart__value {
+          color: #607d8b;
+          font-weight: 700;
+        }
+        .total-money {
+          font-size: 19px;
+          color: #f44336;
+        }
+      }
+      .money-edit {
+        padding-bottom: 5px;
+        border-bottom: 1px dashed #d5d5d5;
+      }
+    }
+    .cart__pay {
+      padding: 15px 0;
+      .btn-pay {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 7px 0;
+        background-color: #333;
+        color: white;
+        border-radius: 50px;
+        transition: all 0.2s;
+        &:hover {
+          background-color: #18a0c6;
+        }
+      }
+    }
+  }
+}
