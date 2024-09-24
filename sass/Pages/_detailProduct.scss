@@ -39,52 +39,29 @@
         display: flex;
         align-items: center;
         margin-right: $mg-1;
-        .slick-next,
-        .slick-prev {
+        .gadget-btnNavSlick {
           width: 70px;
           height: 30px;
           background-color: $color-white-4;
           border-radius: $border-radius-1;
           transition: 0.3s;
           box-shadow: none;
+          border: none;
           &:hover {
             background-color: $color-gray-2;
-            &::before {
-              filter: none;
-            }
           }
         }
-        .slick-prev {
-          top: 7px;
+        .btn-up {
+          position: absolute;
+          top: -10px;
           left: 0px;
           z-index: 2;
-          &::before {
-            opacity: 1;
-            content: "";
-            background-image: url(../../Gadgets/img/btn-up.png);
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-          }
         }
-        .slick-next {
+        .btn-down {
+          position: absolute;
           top: unset;
-          bottom: -25px;
+          bottom: -10px;
           right: 0px;
-          &::before {
-            opacity: 1;
-            content: "";
-            background-image: url(../../Gadgets/img/btn-down.png);
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-          }
         }
         .slick-list {
           padding: 0 !important;

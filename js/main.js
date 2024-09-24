@@ -6,6 +6,10 @@ window.addEventListener("load", function () {
       slidesToScroll: 1,
       arrow: true,
       swipeToSlide: true,
+      prevArrow:
+        '<button class="gadget-btnSlick btn-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>',
+      nextArrow:
+        '<button class="gadget-btnSlick btn-next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
     });
   });
 
@@ -16,6 +20,10 @@ window.addEventListener("load", function () {
       slidesToScroll: 1,
       arrow: true,
       swipeToSlide: true,
+      prevArrow:
+        '<button class="gadget-btnSlick btn-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>',
+      nextArrow:
+        '<button class="gadget-btnSlick btn-next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
     });
   });
 
@@ -26,6 +34,10 @@ window.addEventListener("load", function () {
       slidesToScroll: 1,
       arrow: true,
       swipeToSlide: true,
+      prevArrow:
+        '<button class="gadget-btnSlick btn-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>',
+      nextArrow:
+        '<button class="gadget-btnSlick btn-next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
     });
   });
 
@@ -36,6 +48,10 @@ window.addEventListener("load", function () {
       slidesToScroll: 1,
       arrow: true,
       swipeToSlide: true,
+      prevArrow:
+        '<button class="gadget-btnSlick btn-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>',
+      nextArrow:
+        '<button class="gadget-btnSlick btn-next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
     });
   });
 
@@ -56,6 +72,10 @@ window.addEventListener("load", function () {
       focusOnSelect: true,
       vertical: true,
       verticalSwiping: true,
+      prevArrow:
+        '<button class="gadget-btnNavSlick btn-up" type="button"><i class="fa-solid fa-angle-up"></i></button>',
+      nextArrow:
+        '<button class="gadget-btnNavSlick btn-down" type="button"><i class="fa-solid fa-angle-down"></i></i></button>',
     });
   });
 
