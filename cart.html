@@ -67,7 +67,7 @@
                                     <button class="right-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         <i class="fa fa-shopping-cart"></i>
-                                        <span class="number">0</span>
+                                        <span class="number">2</span>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <div class="dropdown-title">
@@ -76,18 +76,21 @@
                                         <div class="cart-list">
                                             <div class="item">
                                                 <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
-                                                            alt=""></a>
+                                                    <a class="imgPd" id="imgPd" href="#"><img
+                                                            src="./img/products/lap-2/de-1.jpg" alt=""></a>
                                                     <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
+                                                        <a class="namePd" id="namePd" href="#">Dell Vostro 3430 -
+                                                            i7-1355U - 16GB -
                                                             512GB SSD</a>
                                                         <div class="amount">
                                                             <span>Số lượng: </span>
                                                             <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
+                                                                max="10" value="1">
                                                         </div>
                                                         <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            <div class="price-new"><span id="cartPrice">16.990.000
+                                                                </span>
+                                                                <span class="vnd">đ</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,50 +98,32 @@
                                             </div>
                                             <div class="item">
                                                 <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
+                                                    <a class="imgPd" href="#"><img src="./img/products/pc-1/de-1.jpg"
                                                             alt=""></a>
                                                     <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
-                                                            512GB SSD</a>
+                                                        <a class="namePd" href="#">LG UltraGear 27GR95QE-B.ATV - 26.5in
+                                                            OLED QHD 240Hz</a>
                                                         <div class="amount">
                                                             <span>Số lượng: </span>
                                                             <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
+                                                                max="10" value="1">
                                                         </div>
                                                         <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            <div class="price-new">24.490.000 <span class="vnd">đ</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item">
-                                                <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
-                                                            alt=""></a>
-                                                    <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
-                                                            512GB SSD</a>
-                                                        <div class="amount">
-                                                            <span>Số lượng: </span>
-                                                            <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
-                                                        </div>
-                                                        <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <div class="cart-checkout">
                                             <div class="cart-total">
-                                                <span>Tổng tiền: </span><span class="total-money">16.990.00 <span
+                                                <span>Tổng tiền: </span><span class="total-money">41.480.000 <span
                                                         class="vnd">đ</span></span>
                                             </div>
                                             <div class="btn-pay">
-                                                <a class="btn--checkout" href="#">Thanh toán</a>
+                                                <a class="btn--checkout" href="cart.html">Giỏ hàng</a>
                                             </div>
                                         </div>
                                     </ul>
@@ -153,7 +138,33 @@
             <nav class="header__menu">
                 <div class="container">
                     <ul class="menu-list d-flex">
-                        <script src="js/category/categories.js"></script>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=1"><span>Màn hình PC</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=2"><span>Máy tính xách tay</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=3"><span>Điện thoại</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=4"><span>Đồng hồ thông minh</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=5"><span>Tai nghe</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=6"><span>Máy nghe nhạc</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=7"><span>Camera</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=8"><span>Máy đọc sách</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=9"><span>Phụ kiện</span></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -168,22 +179,21 @@
                         <div class="cart__list">
                             <div class="cart__title">
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <span>Giỏ hàng của bạn (có <span id="totalQuantity">3</span> sản phẩm)</span>
+                                <span>Giỏ hàng của bạn (có <span id="totalQuantity">2</span> sản phẩm)</span>
                             </div>
                             <div class="cart__products">
                                 <div class="cart__item">
                                     <div class="cart__detail">
                                         <a class="cart__img" href="">
-                                            <img src="https://cdn.techzones.vn/Data/Sites/1/Product/41391/thumbs/80xtechzones-asus-vivobook-14-x1404.jpg"
-                                                alt="">
+                                            <img src="./img/products/lap-2/de-1.jpg" alt="">
                                         </a>
                                         <div class="cart__caption">
                                             <div class="cart__info">
-                                                <a class="cart__name" href="">ASUS Vivobook 14 X1404VA-NK125W - i5-1335U
-                                                    - 8GB - 256GB - Win 11 - Bạc</a>
+                                                <a class="cart__name" href="">Dell Vostro 3430 - i7-1355U - 16GB - 512GB
+                                                    SSD</a>
                                                 <div class="cart__amount">
                                                     <span>Số lượng: </span>
-                                                    <input type="number" name="" id="">
+                                                    <input type="number" name="" id="" value="1">
                                                 </div>
                                             </div>
                                             <div class="cart__price">
@@ -199,20 +209,20 @@
                                 <div class="cart__item">
                                     <div class="cart__detail">
                                         <a class="cart__img" href="">
-                                            <img src="https://cdn.techzones.vn/Data/Sites/1/Product/41391/thumbs/80xtechzones-asus-vivobook-14-x1404.jpg"
-                                                alt="">
+                                            <img src="./img/products/pc-1/de-1.jpg" alt="">
                                         </a>
                                         <div class="cart__caption">
                                             <div class="cart__info">
-                                                <a class="cart__name" href="">ASUS Vivobook 14 X1404VA-NK125W - i5-1335U
-                                                    - 8GB - 256GB - Win 11 - Bạc</a>
+                                                <a class="cart__name" href="">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED
+                                                    QHD 240Hz</a><span class="cart__sale">Sale 10%</span>
                                                 <div class="cart__amount">
                                                     <span>Số lượng: </span>
-                                                    <input type="number" name="" id="">
+                                                    <input type="number" name="" id="" value="1">
                                                 </div>
                                             </div>
                                             <div class="cart__price">
-                                                <div class="price-new">16.990.000 ₫</div>
+                                                <div class="price-old">24.490.000 ₫</div>
+                                                <div class="price-new">22.041.000 ₫</div>
                                                 <div class="price-des">(Giá đã bao gồm VAT)</div>
                                             </div>
                                         </div>
@@ -221,31 +231,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="cart__item">
-                                    <div class="cart__detail">
-                                        <a class="cart__img" href="">
-                                            <img src="https://cdn.techzones.vn/Data/Sites/1/Product/41391/thumbs/80xtechzones-asus-vivobook-14-x1404.jpg"
-                                                alt="">
-                                        </a>
-                                        <div class="cart__caption">
-                                            <div class="cart__info">
-                                                <a class="cart__name" href="">ASUS Vivobook 14 X1404VA-NK125W - i5-1335U
-                                                    - 8GB - 256GB - Win 11 - Bạc</a>
-                                                <div class="cart__amount">
-                                                    <span>Số lượng: </span>
-                                                    <input type="number" name="" id="">
-                                                </div>
-                                            </div>
-                                            <div class="cart__price">
-                                                <div class="price-new">16.990.000 đ</div>
-                                                <div class="price-des">(Giá đã bao gồm VAT)</div>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn-remove">
-                                            <i class="fa-solid fa-trash"></i>
-                                        </a>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -258,15 +244,15 @@
                             <div class="cart__money">
                                 <div class="cart__group">
                                     <div class="cart__label">Giá gốc:</div>
-                                    <div class="cart__value">20.000.000 đ</div>
+                                    <div class="cart__value">41.480.000 đ</div>
                                 </div>
                                 <div class="cart__group money-edit">
                                     <div class="cart__label">Giảm giá:</div>
-                                    <div class="cart__value">10.000.000 đ</div>
+                                    <div class="cart__value">2.449.000 đ</div>
                                 </div>
                                 <div class="cart__group">
                                     <div class="cart__label">Tổng tiền:</div>
-                                    <div class="cart__value total-money">10.000.000 đ</div>
+                                    <div class="cart__value total-money">39.031.000 đ</div>
                                 </div>
                             </div>
                             <div class="cart__pay">
@@ -349,8 +335,8 @@
                 </div>
             </div>
             <div class="footer__copyright">
-                <p class="footer__lttin">&copy; Copyright 2023 Gadgets. All rights reserved | Design by
-                    <a href="#">LTTin</a>
+                <p class="footer__lttin">&copy; Copyright 2023 Gadgets. All rights reserved | Designed and built by
+                    <a href="#">Le Trung Tin</a>
                 </p>
             </div>
         </div>

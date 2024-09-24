@@ -67,7 +67,7 @@
                                     <button class="right-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         <i class="fa fa-shopping-cart"></i>
-                                        <span class="number">0</span>
+                                        <span class="number">2</span>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <div class="dropdown-title">
@@ -76,18 +76,21 @@
                                         <div class="cart-list">
                                             <div class="item">
                                                 <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
-                                                            alt=""></a>
+                                                    <a class="imgPd" id="imgPd" href="#"><img
+                                                            src="./img/products/lap-2/de-1.jpg" alt=""></a>
                                                     <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
+                                                        <a class="namePd" id="namePd" href="#">Dell Vostro 3430 -
+                                                            i7-1355U - 16GB -
                                                             512GB SSD</a>
                                                         <div class="amount">
                                                             <span>Số lượng: </span>
                                                             <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
+                                                                max="10" value="1">
                                                         </div>
                                                         <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            <div class="price-new"><span id="cartPrice">16.990.000
+                                                                </span>
+                                                                <span class="vnd">đ</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,50 +98,32 @@
                                             </div>
                                             <div class="item">
                                                 <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
+                                                    <a class="imgPd" href="#"><img src="./img/products/pc-1/de-1.jpg"
                                                             alt=""></a>
                                                     <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
-                                                            512GB SSD</a>
+                                                        <a class="namePd" href="#">LG UltraGear 27GR95QE-B.ATV - 26.5in
+                                                            OLED QHD 240Hz</a>
                                                         <div class="amount">
                                                             <span>Số lượng: </span>
                                                             <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
+                                                                max="10" value="1">
                                                         </div>
                                                         <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
+                                                            <div class="price-new">22.041.000 <span class="vnd">đ</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item">
-                                                <div class="cart-item">
-                                                    <a class="imgPd" href="#"><img src="./img/products/lap-2/de-1.jpg"
-                                                            alt=""></a>
-                                                    <div class="info-item">
-                                                        <a class="namePd" href="#">Dell Vostro 3430 - i7-1355U - 16GB -
-                                                            512GB SSD</a>
-                                                        <div class="amount">
-                                                            <span>Số lượng: </span>
-                                                            <input type="number" name="quantity" id="quantity" min="1"
-                                                                max="10">
-                                                        </div>
-                                                        <div class="price">
-                                                            <div class="price-new">16.990.00 <span class="vnd">đ</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <div class="cart-checkout">
                                             <div class="cart-total">
-                                                <span>Tổng tiền: </span><span class="total-money">16.990.00 <span
+                                                <span>Tổng tiền: </span><span class="total-money">39.031.000 <span
                                                         class="vnd">đ</span></span>
                                             </div>
                                             <div class="btn-pay">
-                                                <a class="btn--checkout" href="#">Thanh toán</a>
+                                                <a class="btn--checkout" href="cart.html">Giỏ hàng</a>
                                             </div>
                                         </div>
                                     </ul>
@@ -153,7 +138,33 @@
             <nav class="header__menu">
                 <div class="container">
                     <ul class="menu-list d-flex">
-                        <script src="js/category/categories.js"></script>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=1"><span>Màn hình PC</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=2"><span>Máy tính xách tay</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=3"><span>Điện thoại</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=4"><span>Đồng hồ thông minh</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=5"><span>Tai nghe</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=6"><span>Máy nghe nhạc</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=7"><span>Camera</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=8"><span>Máy đọc sách</span></a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="detailCategory.html?idCate=9"><span>Phụ kiện</span></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -163,10 +174,99 @@
     <section class="searchPd">
         <div class="container">
             <div class="searchPd__content">
-                <h2 class="section-text" id="result-search"></h2>
+                <h2 class="section-text" id="result-search">Kết quả tìm kiếm của "PC"</h2>
                 <div class="searchPd__list">
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=1&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-1/pd-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">LG UltraGear 27GR95QE-B.ATV - 26.5in OLED QHD 240Hz</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">22.041.000 <span class="vnd">đ</span></p>
+                                    <span class="card-sale">Sale 10%</span>
+                                </div>
+                                <p class="card-old">24.490.000 <span class="vnd">đ</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=2&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-2/pd-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dahua DHI-LM27-C201 - 27in FHD IPS</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">2.700.000 <span class="vnd">đ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=7&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-3/pd-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dahua DHI-LM24-A200 - 23.6in FHD VA</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">2.000.000 <span class="vnd">đ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=8&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-4/pd-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dahua DHI-LM27-E231 - 27in FHD IPS</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">4.190.000 <span class="vnd">đ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=16&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-5/pd-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dahua DHI-LM27-E230C - 27in FHD VA Cong</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">3.285.000 <span class="vnd">đ</span></p>
+                                    <span class="card-sale">Sale 10%</span>
+                                </div>
+                                <p class="card-old">3.650.000 <span class="vnd">đ</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=17&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-6/pd-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">LG UltraGear 48GQ900-B.ATV - 48in OLED UHD 4K 120Hz</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">26.541.000 <span class="vnd">đ</span></p>
+                                    <span class="card-sale">Sale 10%</span>
+                                </div>
+                                <p class="card-old">29.490.000 <span class="vnd">đ</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="searchPd__item text-decoration-none" href="detailProduct.html?idProduct=18&idCate=1">
+                        <div class="card">
+                            <img src="./img/products/pc-7/pd-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Màn hình di động Viewsonic VP16 - 15.6in FHD OLED USB-C</h5>
+                                <div class="card-discount d-flex align-items-end">
+                                    <p class="card-new">13.990.000 <span class="vnd">đ</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <script src="./js/product/searchProduct.js"></script>
+
             </div>
         </div>
     </section>
@@ -241,8 +341,8 @@
                 </div>
             </div>
             <div class="footer__copyright">
-                <p class="footer__lttin">&copy; Copyright 2023 Gadgets. All rights reserved | Design by
-                    <a href="#">LTTin</a>
+                <p class="footer__lttin">&copy; Copyright 2023 Gadgets. All rights reserved | Designed and built by <a
+                        href="#">Le Trung Tin</a>
                 </p>
             </div>
         </div>
